@@ -271,7 +271,7 @@ function loadMenuScreen () {
     effects.blizzard.startScreenEffect()
     pause(1000)
     game.showLongText("Witaj błędny rycerzu, klikaj przycisk jeślisz gotowy zdobyć górę ", DialogLayout.Bottom)
-    pause(1000)
+    pause(2000)
     bol_enabledA = true
 }
 function destroyPlayer () {
