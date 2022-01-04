@@ -371,5 +371,5 @@ if (false) {
     loadMapScreen()
 }
 game.onUpdateInterval(500, function () {
-	
+    scene.setBackgroundColor(0)
 })
