@@ -310,6 +310,7 @@ function createPlayer () {
 }
 function fillPlacesOnMap () {
     for (let value of tiles.getTilesByType(sprites.builtin.forestTiles0)) {
+        let dfghjkl: tiles.Location = null
         sprite_Village1 = sprites.create(img`
             3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
             3 . . . . . . . . . . . . . . 3 
@@ -328,7 +329,7 @@ function fillPlacesOnMap () {
             3 3 . . . . . . . . . . . . . 3 
             3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
             `, SpriteKind.Place)
-        tiles.placeOnTile(sprite_Village1, value)
+        tiles.placeOnTile(sprite_Village1, dfghjkl)
     }
 }
 function loadMapScreen () {
@@ -371,5 +372,5 @@ if (false) {
     loadMapScreen()
 }
 game.onUpdateInterval(500, function () {
-    scene.setBackgroundColor(0)
+    scene.setBackgroundColor(10)
 })
